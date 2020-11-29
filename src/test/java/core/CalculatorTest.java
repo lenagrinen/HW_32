@@ -4,14 +4,14 @@ import static org.junit.Assert.*;
 import org.junit.*; 
 import org.junit.runners.MethodSorters;
 
-@FixMethodOrder(MethodSorters.JVM) // NAME_ASCENDING
+@FixMethodOrder(MethodSorters.NAME_ASCENDING) // NAME_ASCENDING  JVM
 
 public class CalculatorTest {
 
 	@Test(timeout=1000) // @Ignore
 	public void test_01_add_2() {
 		System.out.println("Test # 01: Add 2 params");
-		assertEquals("Not correct", Calculator.add(200.0, 150.0), 350.0, 0.09);}
+		assertEquals("Not correct", Calculator.add(200.0, 150.0), 351.0, 0.09);}
 
 	@Test(timeout=1000) // @Ignore
 	public void test_02_add_3() {
@@ -21,7 +21,7 @@ public class CalculatorTest {
 	@Test(timeout=1000) // @Ignore
 	public void test_03_add_4() {
 		System.out.println("Test # 03: Add 4 params");
-		assertEquals("Not correct", Calculator.add(185.3, 0.7, 10.0, 74.0), 270.0, 0.09);}
+		assertEquals("Not correct", Calculator.add(185.3, 0.7, 10.0, 74.0), 271.0, 0.09);}
 
 	@Test(timeout=1000) // @Ignore
 	public void test_04_divide_2() {
